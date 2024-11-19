@@ -11,5 +11,9 @@ import math
 def main(n):
     print(math.sqrt(n))
 
+    if n < 0:
+        raise ValueError("n should be a positive number")
+    print(math.sqrt(n))
+
 if __name__ == "__main__":
     main()
